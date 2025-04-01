@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Analytics Agent</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>LLM Analytics Agent</h1>
+        <p>Enter a description of your data to analyze:</p>
+        <form method="POST">
+            <textarea name="data_description" rows="5" cols="50" placeholder="e.g., Retail sales data with customer ID, purchase date, product category..."></textarea>
+            <br>
+            <input type="submit" value="Analyze">
+        </form>
+    </div>
+</body>
+</html>

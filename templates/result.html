@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Results</h1>
+        <h2>Data Description</h2>
+        <p>{{ result.data_description }}</p>
+        
+        <h2>Data Exploration</h2>
+        <pre>{{ result.data_exploration }}</pre>
+        
+        <h2>Cleaning Strategy</h2>
+        <pre>{{ result.cleaning_strategy }}</pre>
+        
+        <h2>Visualization Design</h2>
+        <pre>{{ result.visualization_design }}</pre>
+        
+        <h2>Insight Generation</h2>
+        <pre>{{ result.insight_generation }}</pre>
+        
+        <h2>Action Recommendations</h2>
+        <pre>{{ result.action_recommendations }}</pre>
+        
+        <h2>Executive Summary</h2>
+        <pre>{{ result.executive_summary }}</pre>
+        
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>
